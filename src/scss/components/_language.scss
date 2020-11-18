@@ -1,0 +1,29 @@
+@import '../variables';
+
+.headerLanguage{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-block{
+        width: 100%;
+        text-align: right;
+    }
+    &-buttons{
+        button{
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: $black;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            margin: 0 5px;
+            transition: ease-in-out .3s;
+            cursor: pointer;
+            outline: none;
+            &:hover{
+                color: $site-color-hover;
+                border: 1px solid $site-color-hover;
+            }
+        }
+    }
+}
